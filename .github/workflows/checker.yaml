@@ -4,6 +4,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   commitlint:
+    environment: commitlint
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
