@@ -1,5 +1,5 @@
 {
-  "name": "create-package",
+  "name": "my-ts-node-starter",
   "version": "0.0.9",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -19,7 +19,7 @@
   },
   "author": "Sobirov Diyorbek <sabirovdiyorkind@gmail.com>",
   "license": "MIT",
-  "description": "-about your package-",
+  "description": "My TypeScript Node.js Starter",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
@@ -46,7 +46,7 @@
     "url": "https://github.com/DIY0R/file-graph/issues"
   },
   "keywords": [
-    "..."
+    "eslint","prettier","ts","commitlint"," release-it","husky-hooks"
   ],
   "npm": {
     "publish": true
