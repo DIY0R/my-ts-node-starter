@@ -21,7 +21,7 @@
   "license": "MIT",
   "description": "My TypeScript Node.js Starter",
   "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
+    "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.4.1",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.10.0",
