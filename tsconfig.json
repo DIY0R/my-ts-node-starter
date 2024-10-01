@@ -1,30 +1,29 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
         "declaration": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
-        "target": "ES2021",
+        "esModuleInterop": true,
         "sourceMap": true,
-        "outDir": "./dist",
-        "baseUrl": "./",
+        "baseUrl": ".",
+        "moduleResolution": "node",
         "skipLibCheck": true,
         "strictNullChecks": false,
         "noImplicitAny": false,
         "strictBindCallApply": false,
-        "forceConsistentCasingInFileNames": false,
+        "forceConsistentCasingInFileNames": true,
         "noFallthroughCasesInSwitch": false,
     },
     "include": [
         "lib/**/*",
-        "test/**/*",
+        "test/**/*"
     ],
     "ignorePatterns": [
         "commitlint.config.js"
     ],
     "exclude": [
         "node_modules",
-        "dist",
+        "dist"
     ]
 }

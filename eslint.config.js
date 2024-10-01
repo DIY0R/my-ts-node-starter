@@ -1,11 +1,11 @@
-import pluginJs from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
-import prettierPlugin from 'eslint-plugin-prettier';
-import eslintConfigPrettier from 'eslint-config-prettier';
+const pluginJs = require('@eslint/js');
+const globals = require('globals');
+const tseslint = require('typescript-eslint');
+const prettierPlugin = require('eslint-plugin-prettier');
+const eslintConfigPrettier = require('eslint-config-prettier');
 
 /** @type {import('eslint').Linter.FlatConfig[]} */
-export default tseslint.config(
+module.exports = tseslint.config(
   {
     plugins: {
       '@typescript-eslint': tseslint.plugin,
@@ -31,7 +31,7 @@ export default tseslint.config(
         ...globals.es2020,
       },
       parserOptions: {
-        project: ['tsconfig.json', 'tsconfig.build.json'],
+        project: 'tsconfig.json',
       },
     },
   },
@@ -40,9 +40,9 @@ export default tseslint.config(
     rules: {
       ...prettierPlugin.configs.recommended.rules,
       ...eslintConfigPrettier.rules,
-      'max-lines': ['warn', { max: 124 }],
+      'max-lines': 'off',
       'max-params': ['error', 3],
-      'no-unused-vars': 'warn',
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-explicit-any': 'off',
       'prettier/prettier': [

@@ -2,12 +2,10 @@
   "name": "my-ts-node-starter",
   "version": "0.0.9",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "./dist"
   ],
-  "type": "module",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prettier": "prettier 'lib/**/**.{js,ts}' 'test/**/**.{js,ts}'  --check --ignore-unknown",
