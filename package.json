@@ -37,11 +37,11 @@
   "overrides": {"eslint":"^9.8.0"},
   "repository": {
     "type": "git",
-    "url": "https://github.com/DIY0R/name_repo"
+    "url": "https://github.com/DIY0R/my-ts-node-starter"
   },
-  "homepage": "https://github.com/DIY0R/file-graph",
+  "homepage": "https://github.com/DIY0R/my-ts-node-starter",
   "bugs": {
-    "url": "https://github.com/DIY0R/file-graph/issues"
+    "url": "https://github.com/DIY0R/my-ts-node-starter/issues"
   },
   "keywords": [
     "eslint","prettier","ts","commitlint"," release-it","husky-hooks"
